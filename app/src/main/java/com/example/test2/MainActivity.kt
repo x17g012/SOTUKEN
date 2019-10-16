@@ -8,7 +8,7 @@ import android.view.MenuItem
 
 import kotlinx.android.synthetic.main.activity_main.*
 import android.content.Intent
-
+import com.example.test2.ui.login.LoginActivity
 
 
 class MainActivity : AppCompatActivity() {
@@ -18,8 +18,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
 
+        //ボタンをクリックしたとき
         button.setOnClickListener {
-            val intent = Intent(this, MapsActivity::class.java)
+            //画面遷移!
+            val intent = Intent(this,TitleActivity::class.java)
             startActivity(intent)
         }
 
